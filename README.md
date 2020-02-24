@@ -1,7 +1,6 @@
 # A Library of Reps
 
-> Ability equals knowledge plus 10,000 times.
-- Shinichi Suzuki
+> Ability equals knowledge plus 10,000 times. - Shinichi Suzuki
 
 This repo provides a library of tiny coding exercises that you can do some of
 every day to build your muscle memory. Incorporating more syntax and library
