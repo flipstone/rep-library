@@ -31,8 +31,9 @@ instance Ord Rank where
       (Silver, Silver) -> EQ
       (Bronze, Bronze) -> EQ
       (Gold, _) -> GT
+      (_, Gold) -> LT
       (Silver, _) -> GT
-      (Bronze, _) -> LT
+      (_, Silver) -> LT
 
 ranks :: [Rank]
 ranks =
