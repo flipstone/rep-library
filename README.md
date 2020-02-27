@@ -46,11 +46,18 @@ start your compiler running so you can get feedback. Then go through the items
 in the header one by one and implement them. If you get stuck, you can peek
 back at the answers in the libary for help. Do this every day until you can
 implement all the Reps on that subject without peeking back. Then keep doing
-until you can do them all without going back to the comment at the top to
+it until you can do them all without going back to the comment at the top to
 figure out what's next each time.
 
+If you make a mistake, don't just fix it and move on. That will train you brain
+to make the same mistake next time and fix it afterwards again. Instead go back
+to some logical point ahead of the mistake and redo that part of the Rep from
+there, this time without making the mistake. If you really want to make sure
+the correct way is imprinted on your neurons more deeply than the mistake, keep
+redoing the section until you can do it 5 times perfectly in a row.
+
 Once all the Reps for that subject are under your fingers, try moving on to a
-different subject to keep it interesting a new. It may take you only a week
+different subject to keep it interesting and new. It may take you only a week
 to remember the Reps. For subjects that are newer to you it may take longer to
 master them to that level.
 
