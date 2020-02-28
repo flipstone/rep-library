@@ -23,6 +23,10 @@ dependencies:
 - containers
 - free
 
+ghc-options:
+- -Wall
+- -Werror
+
 library:
   source-dirs: haskell
 
