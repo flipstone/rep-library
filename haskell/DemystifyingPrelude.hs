@@ -24,4 +24,4 @@ foldLList functionBA2B b listA =
   case listA of
     [] -> b
     (x:xs) ->
-      makeFoldL functionBA2B (functionBA2B b x) xs
+      foldLList functionBA2B (functionBA2B b x) xs
