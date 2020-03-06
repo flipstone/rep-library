@@ -7,9 +7,9 @@ In these reps you'll practice the various ways Foldable can be implemented and
 the how to implement it on different kinds of datastructures.
 
 - Implement a type like Maybe
-- Write a full instance of Foldable for your "Maybe"
+- Write an instance of Foldable including both foldMap and foldr for your Maybe
 - Write a newtype around List
-- Write a full instance of Foldable for your "List"
+- Write an instance of Foldable including both foldMap and foldr for your "List"
 
 -}
 
@@ -37,7 +37,7 @@ instance Foldable Listy where
   foldr fn seed lst =
     case lst of
       Listy [] -> seed
-      Listy (first : rest) -> foldr fn (fn first seed) (Listy rest)
+      Listy (first : rest) -> fn first $ foldr fn seed (Listy rest)
 
   foldMap fn lst =
     case lst of
