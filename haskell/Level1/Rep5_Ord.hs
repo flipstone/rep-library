@@ -13,7 +13,7 @@
       - Then build one that uses the Ordering Semigroup
       - Then build one that uses the Ordering Semigroup and the (->) Semigroup
 --}
-module Ord where
+module Level1.Rep5_Ord where
 
 import qualified Data.List as List
 import qualified Data.Ord as Ord

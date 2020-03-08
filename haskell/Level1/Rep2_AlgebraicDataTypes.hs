@@ -21,7 +21,7 @@ Polymorphic Algebraic data type
   - Create a Shoebox Carrot and write out what its type would be.
 -}
 
-module AlgebraicDataTypeBasics where
+module Level1.Rep2_AlgebraicDataTypes where
 
 data Color
   = Green

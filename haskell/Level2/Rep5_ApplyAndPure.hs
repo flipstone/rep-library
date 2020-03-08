@@ -43,7 +43,7 @@ and so forth
 - Build another [Pet] value from your 3 List values using <$> and <*>
 
 -}
-module ApplyAndPure where
+module Level2.Rep5_ApplyAndPure where
 
 pureMaybe :: a -> Maybe a
 pureMaybe a =

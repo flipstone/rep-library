@@ -27,7 +27,7 @@ for diving deeper into functors.
   one of the values above by using the Functor instance of both your types.
 
 -}
-module DemystifyingFunctor where
+module Level2.Rep3_DemystifyingFunctor where
 
 data MyMaybe a
   = MyJust a

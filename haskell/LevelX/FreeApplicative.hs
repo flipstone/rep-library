@@ -12,7 +12,7 @@
    - Implement runBanned2: Another version of runBanned using only retractAp and hoistAp
 --}
 
-module FreeApplicative where
+module LevelX.FreeApplicative where
 
 import qualified Control.Applicative.Free as FreeAp
 import qualified Control.Monad as Monad

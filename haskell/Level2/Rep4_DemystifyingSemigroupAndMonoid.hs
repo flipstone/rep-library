@@ -43,7 +43,8 @@ Ordering, Maybe and Function.
 
 --}
 
-module DemystifyingSemigroupAndMonoid where
+module Level2.Rep4_DemystifyingSemigroupAndMonoid where
+
 -- Semigroup law - Associativity: x <> (y <> z) = (x <> y) <> z
 
 combineList1 :: [a] -> [a] -> [a]

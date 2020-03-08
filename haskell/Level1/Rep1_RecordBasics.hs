@@ -9,7 +9,7 @@ Basics of Haskell Records
 - write a function that will update one of the fields of an existing record with a new value
 
 -}
-module RecordBasics where
+module Level1.Rep1_RecordBasics where
 
 data Moomoo =
   Moomoo

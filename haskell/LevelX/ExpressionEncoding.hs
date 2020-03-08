@@ -29,7 +29,7 @@
   - Demonstrate the usage of FinalTagless a expression that evaluates to an Integer
 --}
 {-# LANGUAGE GADTs #-}
-module ExpressionEncoding where
+module LevelX.ExpressionEncoding where
 
 data TaggedInitial
   = TaggedString String
