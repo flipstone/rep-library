@@ -45,33 +45,47 @@ Ordering, Maybe and Function.
 
 module Level2.Rep4_DemystifyingSemigroupAndMonoid where
 
--- Semigroup law - Associativity: x <> (y <> z) = (x <> y) <> z
+{-
+  Semigroup Law: Associativity
+
+  (x <> y) <> z = x <> (y <> z)
+-}
 
 combineList1 :: [a] -> [a] -> [a]
 combineList1 front back =
   case front of
-    [] -> back
-    (a:as) -> a : combineList1 as back
+    [] ->
+      back
+
+    (first : rest) ->
+      first : combineList1 rest back
 
 combineList2 :: [a] -> [a] -> [a]
-combineList2 = (++)
+combineList2 =
+  (++)
 
 combineOrdering :: Ordering -> Ordering -> Ordering
-combineOrdering first second =
-  case first of
-    EQ -> second
-    _  -> first
+combineOrdering primary secondary =
+  case primary of
+    LT -> LT
+    GT -> GT
+    EQ -> secondary
 
 combineMaybe :: Semigroup a => Maybe a -> Maybe a -> Maybe a
 combineMaybe left right =
   case (left, right) of
-    (Nothing, something) -> something
-    (something, Nothing) -> something
-    (Just someLeft, Just someRight) -> Just (someLeft <> someRight)
+    (Nothing, anything) ->
+      anything
+
+    (anything, Nothing) ->
+      anything
+
+    (Just someLeft, Just someRight)  ->
+      Just (someLeft <> someRight)
 
 combineFunction :: Semigroup b => (a -> b) -> (a -> b) -> a -> b
-combineFunction left right a =
-  left a <> right a
+combineFunction f g a =
+  f a <> g a
 
 newtype Addition =
   Addition
@@ -79,8 +93,9 @@ newtype Addition =
     }
 
 instance Semigroup Addition where
-  a <> b =
-    Addition (getAddition a + getAddition b)
+  left <> right =
+    Addition $
+      getAddition left + getAddition right
 
 newtype Multiplication =
   Multiplication
@@ -88,31 +103,28 @@ newtype Multiplication =
     }
 
 instance Semigroup Multiplication where
-  a <> b =
-    Multiplication (getMultiplication a * getMultiplication b)
+  left <> right =
+    Multiplication $
+      getMultiplication left * getMultiplication right
 
-
--- Monoid laws:
---   mempty is the identify of `<>`
---     a <> mempty = a
---     mempty <> a = a
+{-
+  Monoid laws for mempty:
+    x <> mempty = x
+    mempty <> x = x
+-}
 
 memptyList :: [a]
-memptyList = []
+memptyList =
+  []
 
 memptyOrdering :: Ordering
-memptyOrdering = EQ
+memptyOrdering =
+  EQ
 
 memptyMaybe :: Maybe a
-memptyMaybe = Nothing
+memptyMaybe =
+  Nothing
 
-memptyFunction :: Monoid b => (a -> b)
-memptyFunction _ = mempty
-
-instance Monoid Addition where
-  mempty = Addition 0
-
-instance Monoid Multiplication where
-  mempty = Multiplication 1
-
-
+memptyFunction :: Monoid b => a -> b
+memptyFunction _ =
+  mempty
