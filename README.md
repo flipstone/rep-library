@@ -41,7 +41,7 @@ that you can always do at least 1 Set of reps per day, even if you only have
 time if you want to do it the first time without looking at the answers.
 
 We recommend that you simply start at the beginning and proceed through the
-Levels. Even if you're already comfortable with Haskell, there's always room
+Levels. Even if you're already comfortable with Haskell, there's always room to
 improve your muscle memory. If you find this too tedious to do reps at all, go
 ahead and skip a few Sets foward until you find something slightly more
 interesting. You'll always have the opporunity to go back and review old reps
@@ -80,7 +80,7 @@ to some logical point ahead of the mistake and redo that part of the Rep from
 there, this time without making the mistake. If you really want to make sure
 the correct way is imprinted on your neurons more deeply than the mistake, keep
 redoing the section until you can do it 5 times perfectly in a row. Note: you
-can't _un_learn a mistake, you just have to practice the _un_mistaken way until
+can't *un*learn a mistake, you just have to practice the *un*mistaken way until
 it is the way your brain chooses by default. Of course, the easiest way to do
 that is not to learn the mistake in the first place!
 
