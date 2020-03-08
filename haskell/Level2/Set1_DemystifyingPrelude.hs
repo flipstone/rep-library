@@ -5,7 +5,7 @@
 - Write a function foldLList function that does what foldl does for a List
 
 -}
-module Level2.Rep1_DemystifyingPrelude where
+module Level2.Set1_DemystifyingPrelude where
 
 fmapMaybe :: (a -> b) -> Maybe a -> Maybe b
 fmapMaybe functionA2B ma =

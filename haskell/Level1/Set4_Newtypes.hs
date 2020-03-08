@@ -29,7 +29,7 @@
 - define an Eq instance for Name that compares names in a case-insensitive manner.
 
 --}
-module Level1.Rep4_Newtypes where
+module Level1.Set4_Newtypes where
 
 import qualified Data.Char as Char
 

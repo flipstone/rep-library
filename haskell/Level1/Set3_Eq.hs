@@ -20,7 +20,7 @@ Eq
 - Define another record type and derive Eq for it
 
 --}
-module Level1.Rep3_Eq where
+module Level1.Set3_Eq where
 
 {-
   Eq "laws"
