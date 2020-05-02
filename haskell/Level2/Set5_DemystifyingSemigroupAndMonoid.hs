@@ -43,7 +43,7 @@ Ordering, Maybe and Function.
 
 --}
 
-module Level2.Set4_DemystifyingSemigroupAndMonoid where
+module Level2.Set5_DemystifyingSemigroupAndMonoid where
 
 {-
   Semigroup Law: Associativity

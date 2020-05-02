@@ -14,7 +14,7 @@ the how to implement it on different kinds of datastructures.
 -}
 
 
-module Level2.Set2_DemystifyingFoldable where
+module Level2.Set3_DemystifyingFoldable where
 
 data Option a
   = Something a
